@@ -1,5 +1,5 @@
 # TreasureHunt
-Sink a ship style game
+Sink a ship style game Applying Java Swing GUI
 # Rules
 o There are 3 Treasure Chests hidden in the dig Area. <br />
 o Each chest in (3 x 1) tiles long. <br />
