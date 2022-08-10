@@ -60,7 +60,7 @@ public class MyFrame extends JFrame
 //            t.setText(i+"");
             t.addActionListener(e -> {
                 if(e.getSource()==t)
-                    explore((byte)t.getX(),(byte)t.getY());
+                    explore(t.getX(),t.getY());
             });
             tiles.put(i,t);
             digArea.add(t);
@@ -70,7 +70,7 @@ public class MyFrame extends JFrame
         add(footer);
         setVisible(true);
     }
-    private void explore(byte x,byte y){
+    private void explore(int x,int y){
         byte coordinate=(byte)(y/10+x/70);
         if(header.getText()=="Start Digging!") header.setText("KeepDigging!!!");
         hit(coordinate,boxes.containsKey(coordinate));
